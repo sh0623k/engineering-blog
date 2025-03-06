@@ -1,0 +1,14 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [":"]
+      }
+    },
+    "spellcheck-tech-word": true
+  }
+}

@@ -1,0 +1,26 @@
+name: Run textlint
+
+on:
+  push:
+    branches:
+      - "main"
+      - "feature/*"
+      - "renovate/*"
+
+jobs:
+  textlint:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: 'npm'
+
+      - name: Run lint
+        run: |
+          npm install
+          npm run lint
