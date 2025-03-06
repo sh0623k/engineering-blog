@@ -6,7 +6,7 @@
     "preset-ja-spacing": true,
     "preset-ja-technical-writing": {
       "ja-no-mixed-period": {
-        "allowPeriodMarks": [":"]
+        "allowPeriodMarks": [":", "："]
       }
     },
     "spellcheck-tech-word": true
